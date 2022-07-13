@@ -22,7 +22,7 @@
 
                 <div class="col-12 text-center">
                     <ul class="list-group">
-                        <li v-for="mail in listMails" class="list-group-item">{{ mail }}</li>
+                        <li v-for="mail in listMails" v-if="listMails.length === 10" class="list-group-item">{{ mail }}</li>
                     </ul>
                 </div>
 
